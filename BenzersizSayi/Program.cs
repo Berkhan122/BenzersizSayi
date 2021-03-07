@@ -16,7 +16,6 @@ namespace BenzersizSayi
             int[] rndarray = new int[sayiadet];
             Random rnd = new Random();
             //int rndsayi = rnd.Next(10, 100);
-           
             for (int i = 0; i < sayiadet; i++)
             {
                 int rndsayi = rnd.Next(10, 20);
@@ -31,7 +30,7 @@ namespace BenzersizSayi
                 }
 
             }
-            
+
             Array.Sort(rndarray);
             for (int i = 0; i < rndarray.Length; i++)
             {
@@ -40,6 +39,27 @@ namespace BenzersizSayi
 
             }
 
+
+
+
+
+
+
+            //for (int i = 0; i < sayiadet; i++)
+            //{
+            //    int rndsayi = rnd.Next(10, 100);
+            //    rndarray[i] = rndsayi;
+
+
+            //}
+            //for (int j = 1; j < rndarray.Length; j++)
+            //{
+            //    if (rndarray[j] == rndsayi)
+            //    {
+            //        int newrnd = rnd.Next(10, 100);
+            //        rndarray[j] = newrnd;
+            //    }
+            //}
         }
     }
 }
