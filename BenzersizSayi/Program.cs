@@ -16,50 +16,29 @@ namespace BenzersizSayi
             int[] rndarray = new int[sayiadet];
             Random rnd = new Random();
             //int rndsayi = rnd.Next(10, 100);
-            for (int i = 0; i < sayiadet; i++)
+            for (int i = 0; i < rndarray.Length; i++)
             {
-                int rndsayi = rnd.Next(10, 20);
+                int rndsayi = rnd.Next(10, 100);
                 rndarray[i] = rndsayi;
-                for (int j = 1; j < rndarray.Length; j++)
+                if (!rndarray.Contains(rndsayi))
                 {
-                    if (rndarray[j] == rndsayi)
-                    {
-                        int newrnd = rnd.Next(10, 100);
-                        rndarray[j] = newrnd;
-                    }
+                    rndarray[i] = rndsayi;
                 }
-
+                //for (int j = 1; j < rndarray.Length; j++)
+                //{
+                //    if (rndarray[i] == rndarray[j])
+                //    {
+                //        int newrnd = rnd.Next(10, 100);
+                //        rndarray[i] = newrnd;
+                //    }
+                //}
             }
-
             Array.Sort(rndarray);
             for (int i = 0; i < rndarray.Length; i++)
             {
-                Console.WriteLine($"{rndarray[i]}--");
-                Console.ReadKey();
-
+                Console.WriteLine($"--{rndarray[i]}");
             }
-
-
-
-
-
-
-
-            //for (int i = 0; i < sayiadet; i++)
-            //{
-            //    int rndsayi = rnd.Next(10, 100);
-            //    rndarray[i] = rndsayi;
-
-
-            //}
-            //for (int j = 1; j < rndarray.Length; j++)
-            //{
-            //    if (rndarray[j] == rndsayi)
-            //    {
-            //        int newrnd = rnd.Next(10, 100);
-            //        rndarray[j] = newrnd;
-            //    }
-            //}
+            Console.ReadKey();
         }
     }
 }
