@@ -24,6 +24,8 @@ namespace BenzersizSayi
                 {
                     rndarray[i] = rndsayi;
                 }
+                
+                //Uzun bir süre bunun üzerinde çalıştım ancak bir çözüm bulamadım.
                 //for (int j = 1; j < rndarray.Length; j++)
                 //{
                 //    if (rndarray[i] == rndarray[j])
@@ -32,6 +34,8 @@ namespace BenzersizSayi
                 //        rndarray[i] = newrnd;
                 //    }
                 //}
+                
+                
             }
             Array.Sort(rndarray);
             for (int i = 0; i < rndarray.Length; i++)
